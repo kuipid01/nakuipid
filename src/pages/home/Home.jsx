@@ -2,9 +2,9 @@
 import React from "react";
 import "./home.scss";
 import Navbar from "../../components/Navbar/Navbar";
-import Feature from "../../components/featured/feature";
+import Feature from "../../components/featured/Feature";
 import MainFeature from "../../components/mainfeatures/MainFeature";
-import Categoriestag from "../../components/categoriesTag/categoriestag";
+import Categoriestag from "../../components/categoriesTag/Categoriestag";
 import MainCat from "../../components/maincategories/MainCat";
 import Footer from "../../components/footer/Footer";
 const Home = () => {
