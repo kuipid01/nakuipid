@@ -85,7 +85,9 @@ const Navbar = () => {
                 <li>BEST DEAL</li>
                 <li>WISHLIST</li>
                 <li>BLOG</li>
-                <li>LOG IN</li>
+                <Link className="link" to={'/login'}>
+        <li>LOG IN</li>
+        </Link>
                 <li className="phone">
                   <AiOutlinePhone /> 09157016669
                 </li>
