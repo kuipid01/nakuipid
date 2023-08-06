@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "./nav.scss";
+import {Link} from 'react-router-dom'
 import {
   AiOutlinePhone,
   AiOutlineMenu,
@@ -30,12 +31,18 @@ const Navbar = () => {
       <h1 className="logo">NaKuipid</h1>
 
       <ul className="navlist">
+        <Link className="link" to='shop'>
         <li>SHOP</li>
+        </Link>
+       
         <li>MY ACCOUNT</li>
         <li>BEST DEAL</li>
         <li>WISHLIST</li>
         <li>BLOG</li>
+        <Link className="link" to={'/login'}>
         <li>LOG IN</li>
+        </Link>
+     
         <li className="phone">
           {" "}
           <AiOutlinePhone /> 09157016669
