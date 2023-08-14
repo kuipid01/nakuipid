@@ -44,7 +44,7 @@ const handleImage = () => {
       <img src="/assets/registerBg.jpg" alt="" />
       <div className="overlay"></div>
       <div className="leftContainer">
-        <Link to='/' className="link">  <h1 className="logo">Nakuipid</h1></Link>
+        <Link to='/'  className="link">  <h1 style={{color:"white"}} className="logo">Nakuipid</h1></Link>
       
         <div className="text">
           <h3>
@@ -101,7 +101,7 @@ const handleImage = () => {
               />
             </div>
             <div className="form-group">
-              <label className={`placeholder ${userImage ? 'active' : ''}`}>Upload Image:</label>
+              <label className={`placeholder1 right ${userImage ? 'active' : ''}`}>Upload Image</label>
               <input
                 type="file"
                 className="input"

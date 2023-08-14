@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./nav.scss";
 import { Link } from "react-router-dom";
 import {
@@ -18,7 +18,9 @@ import "animate.css/animate.min.css";
 const Navbar = () => {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const [navmobileOpen, setNavmobileOpen] = useState(false);
-
+useEffect(() => {
+  console.log('yes')
+}, [currentUser])
   const toggleComponent = () => {
     setNavmobileOpen((prevState) => !prevState);
   };

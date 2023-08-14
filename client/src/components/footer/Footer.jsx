@@ -9,8 +9,11 @@ const Footer = () => {
  await newRequest.post("/auth/logout")
 
     localStorage.setItem("currentUser", null)
+   
+
+
     navigate("/")
-    
+    window.location.reload();
  }
   return (
     <div className='footercontainer'>

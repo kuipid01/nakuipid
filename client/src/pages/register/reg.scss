@@ -3,7 +3,7 @@
     height: 100vh;
     position: relative;
     display: flex;
-
+overflow: hidden;
     img {
         position: absolute;
         width: 100%;
@@ -113,7 +113,7 @@
             h1{
               text-align: center;
             }
-            form {
+            .registration-form {
                 gap: 25px;
                 display: flex;
                 flex-direction: column;
@@ -140,7 +140,21 @@
                     //     opacity: 0.5; /* Add opacity to the label */
                     //   }
                     }
+                 .placeholder1.right{
+                    position: absolute;
                   
+                    top: 50%;
+                    transform: translateY(-50%);
+                    pointer-events: none;
+                    transition: all .3s ease;
+                    color: gray;
+                    right: 10%;
+                    &.active {
+                        top: -8px;
+                        font-size: 12px; /* Adjust the font size as needed */
+                        opacity: 0.5; /* Add opacity to the label */
+                      }
+                 }
                     .placeholder {
                       position: absolute;
                       left: 2%;

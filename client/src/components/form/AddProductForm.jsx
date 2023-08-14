@@ -83,17 +83,19 @@ setSelectedFiles
     <>
    <div className='formContainer'>
     {
-      loading?<Loader/>:  <form onSubmit={handleSubmit}>
+      loading?<Loader/>:  <form className="form" onSubmit={handleSubmit}>
       <input
         type="text"
         name="title"
         placeholder="Title"
         value={title}
+        className='form'
         onChange={(e) => setTitle(e.target.value)}
       />
 
       <input
         type="file"
+          className='form'
         name="coverImage"
         placeholder="Cover Image URL"
         onChange={(e) => setCoverImage(e.target.files[0])}
@@ -102,6 +104,7 @@ setSelectedFiles
       <textarea
         name="description"
         placeholder="Description"
+        className='form'
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />

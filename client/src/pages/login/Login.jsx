@@ -10,7 +10,7 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import newRequest from "../../utils/newRequest";
-const Home = () => {
+const Login = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -28,16 +28,16 @@ const Home = () => {
       navigate("/");
     } catch (err) {
       setError(err.response.data);
-      console.log(err.response.data)
+   
     }
   };
   return (
     <div className="login">
       <img className="imgBgOverlay" src="/assets/img8.png" alt="" />
       <div className="blackOverlay"></div>
-      <Link to="/" className="link">
+      <Link to="/" style={{color:"white", textDecoration:'none'}}>
         {" "}
-        <h1 className="logo">Nakuipid</h1>
+        <p className="logo">Nakuipid</p>
       </Link>
 
       <div className="lgincontainer">
@@ -47,7 +47,7 @@ const Home = () => {
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Username"
           />
-          <span>#</span>
+           <span>#</span> 
         </div>
         <div className="handle">
           <input
@@ -65,7 +65,7 @@ const Home = () => {
             <input type="checkbox" name="login" id="login" />
             <span>remember me</span>
           </div>
-          <button onClick={handleLogin}>Sign In</button>
+          <div className="textBtn" onClick={handleLogin}>Sign In</div>
         </div>
         <div className="options">
           <Link className="link" to="/forgotpasswrod">
@@ -96,4 +96,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Login;

@@ -8,8 +8,10 @@
     align-items: center;
     color: white;
     gap: 30px;
-    h1{
+    p{
         position: relative;
+        color:white;
+        font-size: 30px;
     }
     .lgincontainer{
 display: flex;
@@ -17,8 +19,13 @@ flex-direction: column;
 gap: 20px;
 align-items: center;
 position: relative;
+width: 400px;
+@media (max-width:900px) {
+    width: 100%;
+    padding: 1rem 2rem;
+    }
         .handle{
-            width: 300px;
+            width: 100%;
             height: 50px;
             background: gray;
             position: relative;
@@ -54,16 +61,18 @@ position: relative;
                 gap: 4px;
                 align-items: center;
             }
-            button{
-               padding: 14px 2rem;
+            .textBtn{
+               padding: 7px 3rem;
                border-radius: 7px;
                color: white;
                border: none;
                outline: none;
                 background: #59b8d4;
-                font-weight: 900;
+                font-weight: 400;
                 text-transform: uppercase;
                 cursor: pointer;
+                width: fit-content;
+                
 
             }
         }
